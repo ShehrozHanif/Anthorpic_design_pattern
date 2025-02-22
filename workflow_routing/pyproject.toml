@@ -1,0 +1,15 @@
+[project]
+name = "workflow-routing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+workflow-routing = "workflow_routing:main"
+main1 = "workflow_routing.route:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -1,0 +1,22 @@
+[project]
+name = "prompt-chaining"
+version = "0.1.0"
+description = "A prompt chaining example using CrewAI"
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.102.0",
+    "litellm>=1.30.7",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+prompt = "prompt_chaining.prompt:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+matplotlib = "^3.8.2"
+networkx = "^3.2.1"

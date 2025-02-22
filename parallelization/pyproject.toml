@@ -1,0 +1,19 @@
+[project]
+name = "parallelization"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.102.0",
+]
+
+[project.scripts]
+parallelization = "parallelization:main"
+p1 = "parallelization.main:main"
+p2 = "parallelization.test:main"
+p3 = "parallelization.p3_and:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
