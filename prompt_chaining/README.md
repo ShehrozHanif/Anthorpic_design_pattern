@@ -24,3 +24,11 @@ Instead of relying on a single LLM call, we break the process into multiple step
 ✅ **completion** from litellm is used to call and process responses from LLMs.
 
 ✅ **os** handles file operations, such as saving outputs.
+
+### 2️⃣ Defining Classes and Decorators for Prompt Chaining
+We use Python classes and decorators to modularize the AI workflow:
+
+#### 🔹 Step 1: Input Validation (LLM1)
+* First, we validate the input to ensure it meets the predefined requirements.
+
+* If validation fails, the process stops here.
